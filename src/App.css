@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.border-left-primary {
+  border-left: 0.25rem solid #4e73df!important;
+}
+
+.border-left-success {
+  border-left: 0.25rem solid #1cc88a!important;
+}
+
+
+
+.border-left-warning {
+  border-left: 0.25rem solid #f6c23e!important;
+}
+
+.text-gray-800 {
+  color: #5a5c69!important;
+}
+
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+}
+
+.map-container{
+  width: 80%;
+  height: 100vh;
+}
+
+
+.leaflet-container{
+  height:100vh;
+  width: 100%;
+}
