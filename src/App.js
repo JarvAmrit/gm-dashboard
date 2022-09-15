@@ -6,7 +6,7 @@ import LineChart from "./components/LineChart";
 import BarChart from "./components/BarChart";
 import Login from "./components/Login";
 import React, {useMemo} from "react";
-import html2canvas from "html2canvas";
+//import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import OpenStreetMaps from "./components/OpenStreetMaps";
 // import googleMapsEV from "./components/googleMapsEV";
@@ -15,7 +15,7 @@ function App() {
   const printRef = React.useRef();
   const handleDownloadPdf = async () => {
     const element = printRef.current;
-    const canvas = await html2canvas(element);
+    //const canvas = await html2canvas(element);
     const data = canvas.toDataURL("image/png");
 
     const pdf = new jsPDF();
