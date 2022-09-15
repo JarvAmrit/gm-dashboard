@@ -16,15 +16,15 @@ function App() {
   const handleDownloadPdf = async () => {
     const element = printRef.current;
     //const canvas = await html2canvas(element);
-    const data = canvas.toDataURL("image/png");
+    //const data = canvas.toDataURL("image/png");
 
     //const pdf = new jsPDF();
-    const imgProperties = pdf.getImageProperties(data);
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight = (imgProperties.height * pdfWidth) / imgProperties.width;
+   // const imgProperties = pdf.getImageProperties(data);
+  //  const pdfWidth = pdf.internal.pageSize.getWidth();
+  //  const pdfHeight = (imgProperties.height * pdfWidth) / imgProperties.width;
 
-    pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight);
-    pdf.save("print.pdf");
+  //  pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight);
+    //pdf.save("print.pdf");
   };
 
   // const { isLoaded } = useLoadScript({
