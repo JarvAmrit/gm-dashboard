@@ -7,7 +7,7 @@ import BarChart from "./components/BarChart";
 import Login from "./components/Login";
 import React, {useMemo} from "react";
 //import html2canvas from "html2canvas";
-import { jsPDF } from "jspdf";
+//import { jsPDF } from "jspdf";
 import OpenStreetMaps from "./components/OpenStreetMaps";
 // import googleMapsEV from "./components/googleMapsEV";
 
@@ -18,7 +18,7 @@ function App() {
     //const canvas = await html2canvas(element);
     const data = canvas.toDataURL("image/png");
 
-    const pdf = new jsPDF();
+    //const pdf = new jsPDF();
     const imgProperties = pdf.getImageProperties(data);
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight = (imgProperties.height * pdfWidth) / imgProperties.width;
