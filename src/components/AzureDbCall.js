@@ -16,8 +16,8 @@ getuserData();
 },[])
 
 
-class AzureDbCall extends React.Component {
-    render() {
+export default function AzureDbCall() {
+
       return (
         <div>
             <>            
@@ -30,8 +30,6 @@ class AzureDbCall extends React.Component {
         </div>
         
       );
-    }
+    
   }
   
-
-export default AzureDbCall
