@@ -24,8 +24,8 @@ export default function AzureDbCall() {
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Occupation</th>
-                    <th>Hobbie</th>
+                    <th>Position</th>
+                    <th>Project</th>
                     <th>Id</th>
                     
                 </tr>
@@ -39,8 +39,8 @@ export default function AzureDbCall() {
               <tbody>
                <tr>
                 <td>{data.name}</td>
-                <td>{data.occupation}</td>
-                <td>{data.hobbie}</td>
+                <td>{data.position}</td>
+                <td>{data.project}</td>
                 <td>{data._id}</td>
                 </tr>
               </tbody>
